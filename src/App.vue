@@ -1,12 +1,14 @@
 <script>
 import headerApp from './components/headerApp.vue';
+import AppTitle from './components/AppTitle.vue';
 
 export default {
     data() {
         return { text:"Vite Hello Wordl"}
     },
     components:{
-      headerApp
+      headerApp,
+      AppTitle
     }
 };
 </script>
@@ -15,6 +17,7 @@ export default {
   <div>
     <headerApp/>
     <h1>{{ text }}</h1>
+    <AppTitle/>
   </div>
 </template>
 
